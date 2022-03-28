@@ -28,7 +28,7 @@ For tidiness, I use the following cron job to add a blank line between months:
 1 0 1 * *  echo '' >> /etc/nagios/change.log
 ```
 
-Then in /usr/share/nagios/html/side.php you can add the following line so that the Changelog appears in the side bar and can be displayed in the main Nagios web frame:
+Then in `/usr/share/nagios/html/side.php` you can add the following line so that the Changelog appears in the side bar and can be displayed in the main Nagios web frame:
 
 ```php
 <li><a href="/nagios/changelog.txt" target="<?php echo $link_target;?>">Changelog</a></li>
